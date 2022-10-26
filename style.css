@@ -1,0 +1,61 @@
+/* :root {
+    --bg-color:pink;
+    --bg-color1:green;
+    --bg-color2:red;
+    --bg-color3:yellow;
+}
+.conatiner {
+    height: 300px;
+    width: 300px;
+    background-color: var(--bg-color);
+    border: 3px solid;
+}
+.index1 {
+    height: 50px;
+    width: 50px;
+    background-color: var(--bg-color1);
+}
+.index2 {
+    height: 50px;
+    width: 50px;
+    background-color: var(--bg-color2);
+}
+.index3 {
+    height: 50px;
+    width: 50px;
+    background-color: var(--bg-color3);
+}
+.index4 {
+    height: 50px;
+    width: 50px;
+    background-color: var(--bg-color1);
+} */
+:root {
+    --bg-color:red;
+}
+.parent {
+    display: flex;
+    background-color: aqua;
+}
+.container {
+    background-color: var(--bg-color);
+    height: 300px;
+    width: 300px;    
+    animation-name: ritu;
+    animation-duration: 10s;
+    animation-iteration-count: 3;
+    /* animation-fill-mode:forwards; */
+    /* animation-timing-function:ease-in; */
+    /* animation-timing-function: ease-out; */
+    animation-timing-function: ease-in-out;
+    animation-delay: 3s;
+    animation-direction: reverse;
+}
+@keyframes ritu {
+    from {
+        width: 300px;
+    }
+    to {
+        width:600px
+    }
+}
